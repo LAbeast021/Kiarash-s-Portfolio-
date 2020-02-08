@@ -9,6 +9,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1%;
+    /* position: fixed; */
     
 }
 a{
