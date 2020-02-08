@@ -52,7 +52,6 @@ h1{
     width: 100%;
     height: 300vh;
     border: 3px dotted firebrick;
-    background-color: rgba(110, 110, 110, 0.596);
     z-index: 2px;
     display: flex;
     flex-direction: column;
@@ -66,18 +65,28 @@ h1{
     height: 80%;
     width: 98%;
     background-color: wheat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .nova{
     border: 3px solid rgb(188, 225, 65);
     height: 80%;
     width: 98%;
     background-color: wheat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .carsjr{
     border: 3px solid rgb(225, 169, 65);
     height: 80%;
     width: 98%;
     background-color: wheat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
 }
 .minesweeper{
     border: 3px solid rgb(54, 4, 78);
@@ -99,11 +108,12 @@ h1{
 .project-image{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
-    width: 50%;  
+    width: 51%;  
 }
-.project-image > img {
-    box-shadow: 3px 4px 4px 5px black;
+.project-image > #pic {
+    box-shadow: 0px 0px 0px 5px black;
 }
 .project-information{
     border: 3px dotted forestgreen;
