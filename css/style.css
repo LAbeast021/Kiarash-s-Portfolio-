@@ -84,4 +84,31 @@ h1{
     height: 80%;
     width: 98%;
     background-color: wheat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.project-holder{
+    border: 3px solid black;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: 70%;
+    height: 80%;
+}
+.project-image{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;  
+}
+.project-image > img {
+    box-shadow: 3px 4px 4px 5px black;
+}
+.project-information{
+    border: 3px dotted forestgreen;
+    height: 80%;
+    width: 30%;
+
+
 }
