@@ -8,18 +8,25 @@ nav{
     border: 3px dotted violet;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1%;
     
 }
 a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 a:hover{
-    color: yellow;
+    color: rgb(156, 156, 141);
     font-size: 103%;
-    border-bottom: 1px double rgb(179, 223, 77);
+    border-bottom: 1px double rgb(10, 10, 9);
     text-shadow: 2px 2px 2px black;
 }
+
+img{
+    max-width: 20%;
+    max-height: 20%;
+}
+
 h1{
     font-family: 'Ma Shan Zheng', cursive;
 }
@@ -43,8 +50,38 @@ h1{
 /* /////////////////////////// main container ////////////////////////////////////////// */
 .main-container{
     width: 100%;
-    height: 1000px;
+    height: 300vh;
     border: 3px dotted firebrick;
     background-color: rgba(110, 110, 110, 0.596);
     z-index: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* /////////////PROJECTS /////////////////// */
+.zart{
+    border: 3px solid royalblue;
+    height: 80%;
+    width: 98%;
+    background-color: wheat;
+}
+.nova{
+    border: 3px solid rgb(188, 225, 65);
+    height: 80%;
+    width: 98%;
+    background-color: wheat;
+}
+.carsjr{
+    border: 3px solid rgb(225, 169, 65);
+    height: 80%;
+    width: 98%;
+    background-color: wheat;
+}
+.minesweeper{
+    border: 3px solid rgb(54, 4, 78);
+    height: 80%;
+    width: 98%;
+    background-color: wheat;
 }
