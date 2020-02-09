@@ -120,6 +120,8 @@ h1{
     border: 3px dotted forestgreen;
     height: 80%;
     width: 30%;
-
-
+}
+/* ///////////////////// ARROW ///////////////////////// */
+.arrow:hover{
+cursor: pointer;
 }
