@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
 body{
     background-color: rgba(11, 56, 56, 0.616);
     z-index: 1px;
+    overflow: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mySlides {display:none;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.863);
+
 }
 nav{
     width: 100%;
@@ -29,7 +38,9 @@ img{
 }
 
 h1{
-    font-family: 'Ma Shan Zheng', cursive;
+    /* font-family: 'Ma Shan Zheng', cursive; */
+    font-family: 'Oleo Script', cursive;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 /* /////////////////////////////// ////////////////////////// ///////////////////////  //////////////// */
@@ -48,8 +59,8 @@ h1{
     align-items: center;
 }
 
-/* /////////////////////////// main container ////////////////////////////////////////// */
-.main-container{
+/* /////////////////////////// project container ////////////////////////////////////////// */
+.project-container{
     width: 100%;
     height: 300vh;
     border: 3px dotted firebrick;
@@ -84,6 +95,7 @@ h1{
     height: 80%;
     width: 98%;
     background-color: wheat;
+    /* background-image: linear-gradient(to left, rgb(190, 187, 183),rgb(248, 230, 195),wheat, wheat); */
     display: flex;
     justify-content: end;
     align-items: center;
@@ -103,25 +115,103 @@ h1{
     display: flex; 
     justify-content: space-evenly; 
     align-items: center; 
-    width: 70%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
 }
 .project-image{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: 51%;  
+    max-width: 51%;  
 }
 .project-image > #pic {
     box-shadow: 0px 0px 0px 5px black;
 }
 .project-information{
-    border: 3px dotted forestgreen;
-    height: 80%;
+    /* border: 3px dotted forestgreen; */
+    text-align: center;
+    height: 90%;
     width: 30%;
+    /* box-shadow: 3px -3px 3px 1px  rgba(20, 19, 19, 0.794); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid rgba(20, 19, 19, 0.794);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1.2s;
+}
+.project-information:hover{
+    border: 2px solid rgba(193, 218, 134, 0.794);
+    border-radius: 4%;
+    transition: 1.2s;
+    /* transform: scaleY(1.5); */
+    /* transform: skewX(20deg); */
+    box-shadow: 0 11px 16px 0 rgba(0, 0, 0, 0.424), 0 15px 40px 0 rgba(0, 0, 0, 0.363);
+    transform: rotate3d(1, 1, 1, 360deg);
+}
+
+/* //////////////////////////// PROJECT INFORMATION ITEMS //////////////////////////////// */
+.project-title{
+    width: 80%;
+    height: 10%;
+    border-radius: 10%;
+    border: 2px solid rgb(153, 82, 82);
+}
+.project-text{
+    width: 80%;
+    height: 60%;
+    border-radius: 10%;
+    border: 2px solid rgb(153, 82, 82);
+}
+.project-technologies{
+    width: 80%;
+    height: 20%;
+    border-radius: 10%;
+    border: 2px solid rgb(153, 82, 82);
 }
 /* ///////////////////// ARROW ///////////////////////// */
 .arrow:hover{
 cursor: pointer;
+}
+
+/* ////////////////////// ABOUT CONTAINER /////////////////////////// */
+.about-container {
+    border: 3px dotted red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+.about{
+    border: 3px solid rgb(54, 4, 78);
+    height: 80%;
+    width: 98%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.about-image-holder{
+    border: 3px solid black;
+    width: 40%;
+    height: 70%;
+}
+.about-image{
+   
+}
+.about-text-holder{
+    border: 3px solid black;
+    width: 40%;
+    height: 70%;
+}
+/* ////////////////////////// CONTACT CONTAINER //////////////////////////// */
+.contact-container{
+    border: 3px solid forestgreen;
+    width: 100%;
+    height: 50vh;
 }

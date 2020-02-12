@@ -13,31 +13,56 @@
     <!-- //////////////////////////////// NAVBAR /////////////////////////////////////////////////////////////////////////////// -->
     <nav>
         <div class="logo">
-            <h1> Kiarash  Hesampour</h1>
+            <h1> Kiarash  Hesampour <br>Full Stack Developer</h1>
         </div>
         <div class="links">
-            <a href="#"> <img src="img/icons8-folder-30.png" alt="Projects"> Projects</a>
+            <a href="#projects" class="link"> <img src="img/icons8-folder-30.png" alt="Projects"> Projects</a>
             /
-            <a href="#"> <img src="img/icons8-my-computer-50.png" alt="Projects"> Skills</a>
+            <a href="#skills" class="link"> <img src="img/icons8-my-computer-50.png" alt="Skills"> Skills</a>
             /
-            <a href="#"> <img src="img/about.png" alt="Projects"> About</a>
+            <a href="#about" class="link"> <img src="img/about.png" alt="About"> About</a>
             /
-            <a href="#"> <img src="img/contact info.png" alt="Projects">Contact</a>
+            <a href="#contact" class="link"> <img src="img/contact info.png" alt="Contact">Contact</a>
             
         </div>
     </nav>
+<!-- /////////////////////////////////////////// ABOUT ME ///////////////////////////////////////////////////////////////// -->
+<div class="about-container" id="about">
+    <div class="about">
+        <div class="about-image-holder">
+            <img class="about-image"  src="img/minesweeper menue.png" alt="">
+        </div>
+        <div class="about-text-holder">
+
+        </div>
+    </div>
+
+</div>
 <!-- /////////////////////////////////////////// PROJECTS ///////////////////////////////////////////////////////////////// -->
 <!-- ///////// MINESWEEPER //////////////////// -->
-    <div class="main-container">
+    <div class="project-container"  id="projects">
         <div class="minesweeper">
             <div class="project-holder">
                 <div class="project-image">
-                    <img src="img/prev.png" name="minesweeper"  class="arrow" alt="Prev">
-                    <img id="minesweeper-pic" style="max-width: 100%; max-height: 100%;" src="img/minesweeper menue.png" alt="minesweeper">
-                    <img src="img/next.png" name="minesweeper"  class="arrow" alt="Next">
+
+                    <img src="img/prev.png" name="minesweeper"  class="arrow" alt="Prev" >
+
+                    <img id="minesweeper-pic"  style="max-width: 100%; max-height: 100%;" src="img/minesweeper menue.png" alt="minesweeper">
+
+                    <img src="img/next.png" name="minesweeper"  class="arrow" alt="Next" >
+
+
                 </div>
                 <div class="project-information">
+                    <div class="project-title">
 
+                    </div>
+                    <div class="project-text">
+
+                    </div>
+                    <div class="project-technologies">
+
+                    </div>
                 </div>
             </div>
 
@@ -46,7 +71,15 @@
         <div class="zart">
             <div class="project-holder">
             <div class="project-information">
+                <div class="project-title">
 
+                </div>
+                <div class="project-text">
+
+                </div>
+                <div class="project-technologies">
+
+                </div>
             </div>
             <div class="project-image">
                 <img src="img/prev.png" class="arrow" alt="Prev">
@@ -59,11 +92,25 @@
         <div class="carsjr">
             <div class="project-holder">
                 <div class="project-image">
-                    <img src="img/prev.png" class="arrow" alt="Prev">
-                    <img id="carsjr-pic" style="max-width: 100%; max-height: 100%;" src="img/carsjr menue.png" alt="CarsJr">
-                    <img src="img/next.png" class="arrow" alt="Next">
+                    <img src="img/prev.png" class="arrow"  alt="Prev" onclick="plusDivs(-1)">
+                    <img class="carsjr-pic mySlides"  style="max-width: 100%; max-height: 100%;" src="img/carsjr menue.png" alt="CarsJr">
+                    <img class="carsjr-pic mySlides"  style="max-width: 100%; max-height: 100%;" src="img/carsjr home.png" alt="CarsJr">
+                    <img class="carsjr-pic mySlides"  style="max-width: 100%; max-height: 100%;" src="img/carsjr profile.png" alt="CarsJr">
+                    <img class="carsjr-pic mySlides"  style="max-width: 100%; max-height: 100%;" src="img/carsjr search.png" alt="CarsJr">
+                    <img src="img/next.png" class="arrow"  alt="Next" onclick="plusDivs(1)">
                 </div>
                 <div class="project-information">
+
+                    <div class="project-title">
+
+                    </div>
+                    <div class="project-text">
+
+                    </div>
+                    <div class="project-technologies">
+
+                    </div>
+
 
                 </div>
             </div>
@@ -72,7 +119,15 @@
         <div class="nova">
             <div class="project-holder">
                 <div class="project-information">
+                    <div class="project-title">
 
+                    </div>
+                    <div class="project-text">
+
+                    </div>
+                    <div class="project-technologies">
+
+                    </div>
                 </div>
                 <div class="project-image">
                     <img src="img/prev.png" class="arrow" alt="Prev">
@@ -83,7 +138,29 @@
         </div>
 
     </div>
+    <div class="contact-container" id="contact">
 
+    </div>
+    <!-- /////////// SCRIPTS ////////////////// -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
 <script src="js/main.js"></script>
 </body>
 </html>
