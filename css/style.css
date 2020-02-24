@@ -12,6 +12,18 @@ html{
     box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.863);
 
 }
+.mySlides2 {display:none;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.863);
+
+}
+.mySlides3 {display:none;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.863);
+
+}
+.mySlides4 {display:none;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.863);
+
+}
 nav{
     width: 100%;
     border: 3px dotted violet;
