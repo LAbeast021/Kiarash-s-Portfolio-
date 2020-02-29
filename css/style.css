@@ -60,6 +60,12 @@ h1{
     font-family: 'Oleo Script', cursive;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
+h3{
+    font-family: 'Orbitron', cursive;
+}
+h1:hover, h2:hover, h3:hover, h4:hover {
+    cursor: default;
+}
 
 /* /////////////////////////////// ////////////////////////// ///////////////////////  //////////////// */
 .logo{
@@ -91,25 +97,24 @@ h1{
 
 /* /////////////PROJECTS /////////////////// */
 .zart{
-    border: 3px solid royalblue;
     height: 80%;
     width: 98%;
     background-color: wheat;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-bottom:2px dotted black ;
 }
 .nova{
-    border: 3px solid rgb(188, 225, 65);
     height: 80%;
     width: 98%;
     background-color: wheat;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-bottom:2px dotted black ;
 }
 .carsjr{
-    border: 3px solid rgb(225, 169, 65);
     height: 80%;
     width: 98%;
     background-color: wheat;
@@ -117,19 +122,19 @@ h1{
     display: flex;
     justify-content: end;
     align-items: center;
+    border-bottom:2px dotted black ;
     
 }
 .minesweeper{
-    border: 3px solid rgb(54, 4, 78);
     height: 80%;
     width: 98%;
     background-color: wheat;
     display: flex;
     justify-content: start;
     align-items: center;
+    border-bottom:2px dotted black ;
 }
 .project-holder{
-    border: 3px solid black;
     display: flex; 
     justify-content: space-evenly; 
     align-items: center; 
@@ -161,16 +166,17 @@ h1{
     align-items: center;
     justify-content: space-around;
     transition: 1.2s;
+    font-family: 'Orbitron';
 }
 .project-information:hover{
-    border: 2px solid rgba(193, 218, 134, 0.794);
+    /* border: 2px solid rgba(193, 218, 134, 0.794); */
     border-radius: 4%;
     transition: 1.2s;
     /* transform: scaleY(1.5); */
     /* transform: skewX(20deg); */
     box-shadow: 0 11px 16px 0 rgba(0, 0, 0, 0.424), 0 15px 40px 0 rgba(0, 0, 0, 0.363);
     transform: rotate3d(1, 1, 1, 360deg);
-    background-color: rgba(24, 22, 22, 0.418);
+    background-color: rgba(226, 225, 225, 0.418);
 }
 
 /* //////////////////////////// PROJECT INFORMATION ITEMS //////////////////////////////// */
@@ -181,10 +187,11 @@ h1{
     width: 80%;
     height: 10%;
     border-radius: 10%;
-    border: 2px solid rgb(153, 82, 82);
+    border-bottom: 2px dotted black;
+    
 }
 .project-title > h2 {
-    font-family: 'VT323', ;
+    font-family: 'Orbitron',;
 }
 .link-to-app{
     display: flex;
@@ -204,13 +211,14 @@ h1{
     width: 80%;
     height: 60%;
     border-radius: 10%;
-    border: 2px solid rgb(153, 82, 82);
+    /* border: 2px solid rgb(153, 82, 82); */
+    font-family: 'Orbitron';
 }
 .project-technologies{
     width: 100%;
     height: 20%;
     border-radius: 10%;
-    border: 2px solid rgb(153, 82, 82);
+    /* border: 2px solid rgb(153, 82, 82); */
     display: flex;
     /* justify-content: space-evenly; */
     justify-content: space-around;
