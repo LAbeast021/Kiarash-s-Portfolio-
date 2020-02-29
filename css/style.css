@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+* {
+    font-family: Verdana, Tahoma, "Trebuchet MS", 'Orbitron',"DejuVu Sans", "Bitstream Vera Sans", "VT323",'Special Elite',sans-serif;
+} /* this affects every element */
 body{
     background-color: rgba(11, 56, 56, 0.616);
     z-index: 1px;
@@ -169,12 +175,32 @@ h1{
 
 /* //////////////////////////// PROJECT INFORMATION ITEMS //////////////////////////////// */
 .project-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 80%;
     height: 10%;
     border-radius: 10%;
     border: 2px solid rgb(153, 82, 82);
 }
+.project-title > h2 {
+    font-family: 'VT323', ;
+}
+.link-to-app{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.a-tag-to-app:hover{
+   transition: 1s;
+   transform: rotate(360deg);
+   text-decoration: none;
+}
 .project-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
     height: 60%;
     border-radius: 10%;
@@ -236,4 +262,21 @@ cursor: pointer;
     border: 3px solid forestgreen;
     width: 100%;
     height: 50vh;
+} 
+/* ///////////////////////////// SKILLS ////////////////////////////////// */
+.skills-row1{
+    width: 98%;
+    height: 25%;
+    border: 4px solid red; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.skills-row2{
+    width: 98%;
+    height: 25%;
+    border: 4px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

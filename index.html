@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kiarash</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/icons8-code-fork-80.png">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,7 +41,25 @@
         </div>
     </div>
 
+ <!-- /////////////////////////////////////////// SKILLS ///////////////////////////////////////////////////////////////////// -->
+<div id="skills" class="skills-row1">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/css,html.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/cloudinary.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/jquery.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/js.png" alt="">
+    <img style="max-width: 15%; max-height: 90%;" src="img/icons/icon png version/mongodb.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/nodejs.png" alt="">
 </div>
+<div class="skills-row2">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/python.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/react.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/amazon-s3-png-6.png" alt="">
+    <img style="max-width: 10%; max-height: 90%;" src="img/icons/icon png version/django-logo-negative.png" alt="">
+    <img style="max-width: 30%; max-height: 90%;" src="img/icons/icon png version/heroku.png" alt="">
+
+</div>
+</div>
+
 <!-- /////////////////////////////////////////// PROJECTS ///////////////////////////////////////////////////////////////// -->
 <!-- ///////// MINESWEEPER //////////////////// -->
     <div class="project-container"  id="projects">
@@ -58,10 +80,18 @@
                 </div>
                 <div class="project-information">
                     <div class="project-title">
-
+                        <h2 style="font-family: 'VT323', ;"> AlienSweeper </h2>
                     </div>
                     <div class="project-text">
-
+                        <div style="width: 93%; height: 65%; border: 2px solid springgreen;">
+                            <h3> AlienSweeper is a version of classic game Minesewwper where you have to carefully decide which box you click one if you click a bomb you
+                                loose and if not you will see the number of bombs around that box.
+                            </h3>
+                        </div>
+                        <div class="link-to-app" style="width: 80%; height: 15%; border: 2px solid rgb(255, 238, 0); ">
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://labeast021.github.io/Minesweeper/" target="_blank"><img class="a-tag-to-app" style="max-height: 90%; max-width: 90%;" src="img/icons//icon png version/website-link-icon-png-14.png" alt=""></a></button>
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://github.com/LAbeast021/Minesweeper" target="_blank"><img class="a-tag-to-app" style="max-height: 80%; max-width: 80%;" src="img/icons/icon png version/GitHub-Mark-64px.png" alt=""></a></button>
+                        </div>
                     </div>
                     <div class="project-technologies">
                         <img style="max-width: 30%; max-height: 100%;" src="img/icons/icon png version/css,html.png" alt="">
@@ -77,10 +107,18 @@
             <div class="project-holder">
             <div class="project-information">
                 <div class="project-title">
-
+                    <h2> Zart buy Zart sell </h2>
                 </div>
                 <div class="project-text">
-
+                    <div style="width: 93%; height: 65%; border: 2px solid springgreen;">
+                        <p> AlienSweeper is a version of classic game Minesewwper where you have to carefully decide which box you click one if you click a bomb you
+                            loose and if not you will see the number of bombs around that box.
+                        </p>
+                    </div>
+                    <div class="link-to-app" style="width: 80%; height: 15%; border: 2px solid rgb(255, 238, 0);">
+                        <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://zart-buy-zart-sell.herokuapp.com/" target="_blank"><img class="a-tag-to-app" style="max-height: 90%; max-width: 90%;" src="img/icons//icon png version/website-link-icon-png-14.png" alt=""></a></button>
+                        <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://github.com/LAbeast021/zart-rent-car" target="_blank"><img class="a-tag-to-app" style="max-height: 80%; max-width: 80%;" src="img/icons/icon png version/GitHub-Mark-64px.png" alt=""></a></button>
+                    </div>
                 </div>
                 <div class="project-technologies">
                     <img style="max-width: 25%; max-height: 100%;" src="img/icons/icon png version/mongodb.png" alt="">
@@ -91,9 +129,13 @@
                 </div>
             </div>
             <div class="project-image">
-                <img src="img/prev.png" class="arrow" alt="Prev">
-                <img id="zart-pic" style="max-width: 100%; max-height: 100%;" src="img/minesweeper menue.png" alt="minesweeper">
-                <img src="img/next.png" class="arrow" alt="Next">
+                <img src="img/prev.png" class="arrow" alt="Prev" onclick="plusDivs4(-1)">
+                <img class="zart-pic mySlides4" style="max-width: 100%; max-height: 100%;" src="img/zart home.png" alt="minesweeper">
+                <img class="zart-pic mySlides4" style="max-width: 100%; max-height: 100%;" src="img/zart profile.png" alt="minesweeper">
+                <img class="zart-pic mySlides4" style="max-width: 100%; max-height: 100%;" src="img/zart detail.png" alt="minesweeper">
+                <img class="zart-pic mySlides4" style="max-width: 100%; max-height: 100%;" src="img/zart newcar.png" alt="minesweeper">
+                <img class="zart-pic mySlides4" style="max-width: 100%; max-height: 100%;" src="img/zart viewcar.png" alt="minesweeper">
+                <img src="img/next.png" class="arrow" alt="Next" onclick="plusDivs4(+1)">
             </div>
             </div>
         </div>
@@ -111,10 +153,18 @@
                 <div class="project-information">
 
                     <div class="project-title">
-
+                        <h2> CarsJr </h2>
                     </div>
                     <div class="project-text">
-
+                        <div style="width: 93%; height: 65%; border: 2px solid springgreen;">
+                            <p> AlienSweeper is a version of classic game Minesewwper where you have to carefully decide which box you click one if you click a bomb you
+                                loose and if not you will see the number of bombs around that box.
+                            </p>
+                        </div>
+                        <div class="link-to-app" style="width: 80%; height: 15%; border: 2px solid rgb(255, 238, 0);">
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://carsjr.herokuapp.com/" target="_blank"><img class="a-tag-to-app" style="max-height: 90%; max-width: 90%;" src="img/icons//icon png version/website-link-icon-png-14.png" alt=""></a></button>
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://github.com/LAbeast021/CarsJr" target="_blank"><img class="a-tag-to-app" style="max-height: 80%; max-width: 80%;" src="img/icons/icon png version/GitHub-Mark-64px.png" alt=""></a></button>
+                        </div>
                     </div>
                     <div class="project-technologies">
                         <img class="tooltip" style="max-width: 30%; max-height: 100%;" src="img/icons/icon png version/mongodb.png" alt="MONGODB">
@@ -132,10 +182,18 @@
             <div class="project-holder">
                 <div class="project-information">
                     <div class="project-title">
-
+                        <h2>NovaStream</h2>
                     </div>
                     <div class="project-text">
-
+                        <div style="width: 93%; height: 65%; border: 2px solid springgreen;">
+                            <h4> AlienSweeper is a version of classic game Minesewwper where you have to carefully decide which box you click one if you click a bomb you
+                                loose and if not you will see the number of bombs around that box.
+                            </h4>
+                        </div>
+                        <div class="link-to-app" style="width: 80%; height: 15%; border: 2px solid rgb(255, 238, 0);">
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://labeast021.github.io/Minesweeper/" target="_blank"><img class="a-tag-to-app" style="max-height: 90%; max-width: 90%;" src="img/icons//icon png version/website-link-icon-png-14.png" alt=""></a></button>
+                            <button style="width: 50%; height: 98%; background-color: inherit; border: none;"><a href="https://github.com/LAbeast021/Minesweeper" target="_blank"><img class="a-tag-to-app" style="max-height: 80%; max-width: 80%;" src="img/icons/icon png version/GitHub-Mark-64px.png" alt=""></a></button>
+                        </div>
                     </div>
                     <div class="project-technologies">
                         <img  src="img/icons/icon png version/django-logo-negative.png" alt="">
