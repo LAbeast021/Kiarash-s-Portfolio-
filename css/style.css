@@ -49,12 +49,6 @@ a:hover{
     border-bottom: 1px double rgb(10, 10, 9);
     text-shadow: 2px 2px 2px black;
 }
-
-img{
-    max-width: 20%;
-    max-height: 20%;
-}
-
 h1{
     /* font-family: 'Ma Shan Zheng', cursive; */
     font-family: 'Oleo Script', cursive;
@@ -81,6 +75,19 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.nav-links{
+    border-right: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+    height: 90%;
+}
+.nav-links > img {
+    max-width: 40%;
+    max-height: 40%;
 }
 
 /* /////////////////////////// project container ////////////////////////////////////////// */
@@ -178,6 +185,10 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     transform: rotate3d(1, 1, 1, 360deg);
     background-color: rgba(226, 225, 225, 0.418);
 }
+.project-information:hover > div > h3 {
+    transition: 15s;
+    color: rgb(31, 54, 31);
+}
 
 /* //////////////////////////// PROJECT INFORMATION ITEMS //////////////////////////////// */
 .project-title{
@@ -227,6 +238,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
 .project-technologies > img{
     max-height: 100%;
     max-width: 20%;
+    filter:  drop-shadow(0 0 7px rgb(107, 105, 105));
 }
 /* ///////////////////// ARROW ///////////////////////// */
 .arrow:hover{
@@ -257,9 +269,6 @@ cursor: pointer;
     width: 40%;
     height: 70%;
 }
-.about-image{
-   
-}
 .about-text-holder{
     border: 3px solid black;
     width: 40%;
@@ -274,16 +283,22 @@ cursor: pointer;
 /* ///////////////////////////// SKILLS ////////////////////////////////// */
 .skills-row1{
     width: 98%;
-    height: 25%;
-    border: 4px solid red; 
+    height: 25%; 
+    background-color: wheat;
     display: flex;
     justify-content: space-between;
     align-items: center;  
 }
+.skills-row1 > img {
+    filter:  drop-shadow(0 0 7px rgb(107, 105, 105));
+}
+.skills-row2 > img {
+    filter:  drop-shadow(0 0 7px rgb(107, 105, 105));
+}
 .skills-row2{
     width: 98%;
     height: 25%;
-    border: 4px solid red;
+    background-color: wheat;
     display: flex;
     justify-content: space-around;
     align-items: center;
