@@ -111,6 +111,8 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
 }
 .nova{
     height: 80%;
@@ -119,6 +121,8 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
 }
 .carsjr{
     height: 80%;
@@ -128,6 +132,8 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: end;
     align-items: center;
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
     
 }
 .minesweeper{
@@ -137,6 +143,8 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: start;
     align-items: center;
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
 }
 .project-holder{
     display: flex; 
@@ -266,6 +274,9 @@ cursor: pointer;
     background-color: wheat;
     display: flex;
     justify-content: space-evenly;
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
+    border-top: 8px solid rgb(23, 26, 21);
     /* align-items: center; */
 }
 .about-image-holder{
@@ -275,10 +286,17 @@ cursor: pointer;
 }
 .about-text-holder{
     border: 3px solid black;
+    color: wheat;
     width: 40%;
-    height: 70%;
+    height: 100%;
+   background-color: rgb(23, 26, 21);
 }
 /* ////////////////////////// CONTACT CONTAINER //////////////////////////// */
+.cntact{
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
+    border-bottom: 8px solid rgb(23, 26, 21);
+}
 .contact-container{
     /* border: 3px solid forestgreen; */
     width: 100%;
@@ -337,6 +355,8 @@ cursor: pointer;
     align-items: center;  
     flex-wrap: wrap;
     background-color: rgb(23, 26, 21);
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
 }
 .skills-row1 > img {
     filter:  drop-shadow(2px 0 7px rgb(114, 0, 0));
@@ -353,4 +373,6 @@ cursor: pointer;
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(23, 26, 21);
+    border-left: 8px solid rgb(23, 26, 21);
+    border-right: 8px solid rgb(23, 26, 21);
 }
