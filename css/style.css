@@ -32,29 +32,30 @@ html{
 }
 nav{
     width: 100%;
-    border: 3px dotted violet;
+    /* border: 3px dotted violet; */
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1%;
     /* position: fixed; */
     
 }
-a{
+.atags{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-a:hover{
+.atags:hover{
     color: rgb(156, 156, 141);
     font-size: 103%;
-    border-bottom: 1px double rgb(10, 10, 9);
+    /* border-bottom: 1px double rgb(10, 10, 9); */
     text-shadow: 2px 2px 2px black;
+    text-decoration: none;
 }
 h1{
     /* font-family: 'Ma Shan Zheng', cursive; */
     font-family: 'Oleo Script', cursive;
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
-h3{
+h3,h2,h1,p,a{
     font-family: 'Orbitron', cursive;
 }
 h1:hover, h2:hover, h3:hover, h4:hover {
@@ -63,14 +64,14 @@ h1:hover, h2:hover, h3:hover, h4:hover {
 
 /* /////////////////////////////// ////////////////////////// ///////////////////////  //////////////// */
 .logo{
-    border: 3px dotted rgb(32, 218, 57);
+    /* border: 3px dotted rgb(32, 218, 57); */
     width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .links{
-    border: 3px dotted goldenrod;
+    /* border: 3px dotted goldenrod; */
     width: 70%;
     display: flex;
     justify-content: space-around;
@@ -94,7 +95,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
 .project-container{
     width: 100%;
     height: 300vh;
-    border: 3px dotted firebrick;
+    /* border: 3px dotted firebrick; */
     z-index: 2px;
     display: flex;
     flex-direction: column;
@@ -110,7 +111,6 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom:2px dotted black ;
 }
 .nova{
     height: 80%;
@@ -119,7 +119,6 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom:2px dotted black ;
 }
 .carsjr{
     height: 80%;
@@ -129,7 +128,6 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: end;
     align-items: center;
-    border-bottom:2px dotted black ;
     
 }
 .minesweeper{
@@ -139,7 +137,6 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     justify-content: start;
     align-items: center;
-    border-bottom:2px dotted black ;
 }
 .project-holder{
     display: flex; 
@@ -201,13 +198,18 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     border-bottom: 2px dotted black;
     
 }
-.project-title > h2 {
+.project-title > h3 {
     font-family: 'Orbitron',;
+    font-size: 150%;
+    text-shadow: 3px 2px 2px gray;
 }
 .link-to-app{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.a-tag-to-app{
+    filter: drop-shadow(0 , 0, 0 , 6px , grey);
 }
 .a-tag-to-app:hover{
    transition: 1s;
@@ -218,12 +220,14 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
     height: 60%;
     border-radius: 10%;
     /* border: 2px solid rgb(153, 82, 82); */
     font-family: 'Orbitron';
+    font-size: 100%;
 }
 .project-technologies{
     width: 100%;
@@ -247,7 +251,7 @@ cursor: pointer;
 
 /* ////////////////////// ABOUT CONTAINER /////////////////////////// */
 .about-container {
-    border: 3px dotted red;
+    /* border: 3px dotted red; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -256,7 +260,7 @@ cursor: pointer;
     /* justify-content: flex-end; */
 }
 .about{
-    border: 3px solid rgb(54, 4, 78);
+    /* border: 3px solid rgb(54, 4, 78); */
     height: 80%;
     width: 98%;
     background-color: wheat;
@@ -276,10 +280,53 @@ cursor: pointer;
 }
 /* ////////////////////////// CONTACT CONTAINER //////////////////////////// */
 .contact-container{
-    border: 3px solid forestgreen;
+    /* border: 3px solid forestgreen; */
     width: 100%;
-    height: 50vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 } 
+.contact-way{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(23, 26, 21);
+}
+.social{
+    width: 60%;
+    height: 100%;
+    border-left: 3px solid wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social > button > a > img{
+    /* transition: 3s; */
+    width: 35%;
+    height: 35%;
+}
+.social > button > a > img:hover{
+    transition: 1s;
+    transform: rotate3d(-1, -1, -1, 360deg);
+    color: rgb(17, 19, 16);
+}
+ .contact-way > a {
+    /* border: 3px solid red; */
+    text-decoration: none;
+    background-color: rgb(23, 26, 21);
+    color: wheat;
+    text-shadow: 3px 2px 3px rgb(114, 0, 0);
+}
+.contact-way > a > h3:hover{
+    cursor: pointer;
+}
+.social > button{
+    background-color: inherit;
+    border: none;
+}
 /* ///////////////////////////// SKILLS ////////////////////////////////// */
 .skills-row1{
     width: 98%;
@@ -288,12 +335,14 @@ cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    flex-wrap: wrap;
+    background-color: rgb(23, 26, 21);
 }
 .skills-row1 > img {
-    filter:  drop-shadow(0 0 7px rgb(107, 105, 105));
+    filter:  drop-shadow(2px 0 7px rgb(114, 0, 0));
 }
 .skills-row2 > img {
-    filter:  drop-shadow(0 0 7px rgb(107, 105, 105));
+    filter:  drop-shadow(0 2px 7px rgb(114, 0, 0));
 }
 .skills-row2{
     width: 98%;
@@ -302,4 +351,6 @@ cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(23, 26, 21);
 }
