@@ -217,7 +217,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     justify-content: space-around;
 }
 .a-tag-to-app{
-    filter: drop-shadow(0 , 0, 0 , 6px , grey);
+    filter: drop-shadow(0  0  3px rgb(3, 3, 3));
 }
 .a-tag-to-app:hover{
    transition: 1s;
@@ -323,6 +323,7 @@ cursor: pointer;
 }
 .social > button > a > img{
     /* transition: 3s; */
+    filter: drop-shadow(0 0 3px grey);
     width: 35%;
     height: 35%;
 }
