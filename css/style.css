@@ -7,7 +7,7 @@
     font-family: Verdana, Tahoma, "Trebuchet MS", 'Orbitron',"DejuVu Sans", "Bitstream Vera Sans", "VT323",'Special Elite',sans-serif;
 } /* this affects every element */
 body{
-    background-color: rgba(11, 56, 56, 0.616);
+    background-color: rgb(23, 26, 21);
     z-index: 1px;
     overflow: auto;
 }
@@ -40,7 +40,8 @@ nav{
     
 }
 .atags{
-    color: rgb(0, 0, 0);
+    color: wheat;
+    text-shadow: 3px 2px 3px grey;
     text-decoration: none;
 }
 .atags:hover{
@@ -52,7 +53,8 @@ nav{
 }
 h1{
     /* font-family: 'Ma Shan Zheng', cursive; */
-    font-family: 'Oleo Script', cursive;
+    color: wheat;
+    text-shadow: 2px 3px 2px rgb(116, 113, 113);
     /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 h3,h2,h1,p,a{
@@ -113,6 +115,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     align-items: center;
     border-left: 8px solid rgb(23, 26, 21);
     border-right: 8px solid rgb(23, 26, 21);
+    background-image: linear-gradient(to left, rgb(23, 26, 21),rgb(248, 230, 195),wheat, rgb(23, 26, 21));
 }
 .nova{
     height: 80%;
@@ -123,6 +126,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     align-items: center;
     border-left: 8px solid rgb(23, 26, 21);
     border-right: 8px solid rgb(23, 26, 21);
+    background-image: linear-gradient(to left, rgb(23, 26, 21),rgb(248, 230, 195),wheat, rgb(23, 26, 21));
 }
 .carsjr{
     height: 80%;
@@ -134,6 +138,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     align-items: center;
     border-left: 8px solid rgb(23, 26, 21);
     border-right: 8px solid rgb(23, 26, 21);
+    background-image: linear-gradient(to left, rgb(23, 26, 21),rgb(248, 230, 195),wheat, rgb(23, 26, 21));
     
 }
 .minesweeper{
@@ -145,6 +150,7 @@ h1:hover, h2:hover, h3:hover, h4:hover {
     align-items: center;
     border-left: 8px solid rgb(23, 26, 21);
     border-right: 8px solid rgb(23, 26, 21);
+    background-image: linear-gradient(to left, rgb(23, 26, 21),rgb(248, 230, 195),wheat, rgb(23, 26, 21));
 }
 .project-holder{
     display: flex; 
@@ -268,7 +274,7 @@ cursor: pointer;
     /* justify-content: flex-end; */
 }
 .about{
-    /* border: 3px solid rgb(54, 4, 78); */
+   background-image: linear-gradient(to left, rgb(23, 26, 21),rgb(248, 230, 195),wheat, rgb(23, 26, 21));
     height: 80%;
     width: 98%;
     background-color: wheat;
@@ -360,10 +366,10 @@ cursor: pointer;
     border-right: 8px solid rgb(23, 26, 21);
 }
 .skills-row1 > img {
-    filter:  drop-shadow(2px 0 7px rgb(114, 0, 0));
+    filter:  drop-shadow(2px 0 7px wheat);
 }
 .skills-row2 > img {
-    filter:  drop-shadow(0 2px 7px rgb(114, 0, 0));
+    filter:  drop-shadow(0 2px 7px wheat);
 }
 .skills-row2{
     width: 98%;
